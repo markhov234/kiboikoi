@@ -1,0 +1,28 @@
+.activity {
+  &-section {
+    margin: 0 15px;
+    color: black;
+    & .title-h2 {
+      text-align: center;
+    }
+  }
+  &-content {
+    text-align: center;
+  }
+  &-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    @media screen and (max-width: 980px) {
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+      ); /* Adjust column width for smaller screens */
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
