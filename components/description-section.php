@@ -1,7 +1,5 @@
 <section class="description-section">
 
-    <div class="description-topwave"></div>
-
     <?php
     $contactFields = get_field('contact');
     $contactTitle = $contactFields['title'];
@@ -90,6 +88,5 @@
             </div>
         </div>
     </div>
-    <div class="description-bottomwave"></div>
 
 </section>

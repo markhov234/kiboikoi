@@ -21,3 +21,41 @@ ul {
 // $menu-red: #f0082b;
 // $menu-hover: rgba(240, 8, 43, 0.5);
 // $redError: #A30822;
+
+.hamburger-menu {
+  margin-right: 15px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.line-1 {
+  transform-origin: center;
+}
+
+.line-3 {
+  transform-origin: center;
+}
+
+.open .line-1 {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.open .line-2 {
+  opacity: 0;
+}
+
+.open .line-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}

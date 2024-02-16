@@ -19,22 +19,27 @@
 
 <body>
 
-    <nav id="menu_principal-nav" class="menu-principal-nav">
-        <span class="menu-principal-logo"><img src="<?php echo get_template_directory_uri() . '/dist/images/logo.svg' ?> ?>"></span>
-        <div class="menu-principal-btn" id="menu-btn">
-            <span class="menu-principal-btn-bar"></span>
-            <span class="menu-principal-btn-bar"></span>
-            <span class="menu-principal-btn-bar"></span>
+    <nav id="menu_principal-nav" class="menu-principal">
+        <div class="menu-principal-container">
+            <div class="menu-principal-content">
+                <span class="menu-principal-logo"><img src="<?php echo get_template_directory_uri() . '/dist/images/logo.svg' ?> ?>"></span>
+                <div id="menu-hamburger" class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'primary_menu',
+                    'menu_class'     => 'menu-principal-ul',
+                    'menu_id'     => 'menu-principal-ul',
+                )
+            );
+            ?>
         </div>
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'primary_menu',
-                'menu_class'     => 'menu-principal-ul',
-                'menu_id'     => 'menu-principal-ul',
-            )
-        );
-        ?>
+        <div class="menu-principal-wave"></div>
     </nav>
 
     <?php

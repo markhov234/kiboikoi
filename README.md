@@ -3,11 +3,11 @@
 
 <h2> This project is about 3 main things **Kiboikoi Website**</h2>
 
-- 1.**Wordpress** _I often developed wordpress website but i never made the migration to online. I never played with online and domains name. So i made this website so i could experience these for a first time. Knowing my abilites, i am pretty sure that is the most easiest part once you know how to do. I do not intend to go the extra miles for this website as it was more on the hosting and design points._
+1. **Wordpress** _I often developed wordpress website but i never made the migration to online. I never played with online and domains name. So i made this website so i could experience these for a first time. Knowing my abilites, i am pretty sure that is the most easiest part once you know how to do. I do not intend to go the extra miles for this website as it was more on the hosting and design points._
 
-- 2. **Ui/Ux** _I wanted to give a better ui/ux experience to the customer that would come into this website. Personally as the information on the website is rather small, having multiples pages is not usefull. I took the choice to condense all the information into a one page website._
+2. **Ui/Ux** _I wanted to give a better ui/ux experience to the customer that would come into this website. Personally as the information on the website is rather small, having multiples pages is not usefull. I took the choice to condense all the information into a one page website._
 
-- 3. **Design** _I wanted to challenge myself to do a design about dark green and brown. This comes from the fact that Le Kiboikoi is located in a forest. Surround by all theses trees and tree fir. I used a neutral color to make the website not too dark as it can sometimes gives a more serious vibe._
+3. **Design** _I wanted to challenge myself to do a design about dark green and brown. This comes from the fact that Le Kiboikoi is located in a forest. Surround by all theses trees and tree fir. I used a neutral color to make the website not too dark as it can sometimes gives a more serious vibe._
 
 - 👨‍💻 All of my projects are available at [https://portfolio-hoving.pages.dev/](https://portfolio-hoving.pages.dev/)
 

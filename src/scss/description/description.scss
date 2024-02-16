@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 35px;
     @media screen and (max-width: 980px) {
       flex-direction: column;
       justify-content: center;
@@ -11,9 +12,23 @@
     }
   }
   &-topwave {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 20px;
-    background-color: black;
+    overflow: hidden;
+    line-height: 0;
+
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(124% + 1.3px);
+      height: 93px;
+    }
+
+    & .shape-fill {
+      fill: #152012;
+    }
   }
   &-bottomwave {
     width: 100%;
@@ -139,7 +154,7 @@
       background-color: #273e22;
       transition: ease-in-out 0.1s;
       &:hover {
-        background-color: #2b202b;
+        background-color: #2b2014;
         cursor: pointer;
         & img {
           transform: scale(1.05);

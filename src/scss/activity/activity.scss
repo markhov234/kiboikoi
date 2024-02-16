@@ -1,9 +1,28 @@
 .activity {
   &-section {
-    margin: 0 15px;
     color: black;
     & .title-h2 {
       text-align: center;
+    }
+
+    &-topwave {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+
+      & svg {
+        position: relative;
+        display: block;
+        width: calc(124% + 1.3px);
+        height: 93px;
+      }
+
+      & .shape-fill {
+        fill: #152012;
+      }
     }
   }
   &-content {

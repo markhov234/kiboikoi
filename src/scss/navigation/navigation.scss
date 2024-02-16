@@ -1,0 +1,55 @@
+.menu-principal {
+  &-content {
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+  }
+  &.open &-container {
+    transition: ease-in-out 0.3s;
+    // max-height: fit-content;
+    // height: 100%;
+  }
+  &-container {
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    z-index: 4;
+    height: 50px;
+    // max-height: fit-content;
+    transition: ease-in-out 0.3s;
+    background-color: #2b2014;
+  }
+  &-logo {
+    margin-right: 10px;
+  }
+  z-index: 2;
+  top: 0;
+  position: fixed;
+  width: 250px;
+  // height: 150px;
+  &-wave {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    aspect-ratio: 900/250;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url("../images/wave_menu.svg");
+  }
+
+  &.open &-ul {
+    display: flex;
+    width: 100%;
+  }
+  &-ul {
+    display: none;
+    // animation: ease-in-out 0.3s;
+    & li {
+      visibility: hidden;
+      opacity: 0;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
