@@ -23,11 +23,11 @@ Drawing inspiration from the natural surroundings of Le Kiboikoi, which is nestl
 
 - 👨‍💻 All of my projects are available at [https://portfolio-hoving.pages.dev/](https://portfolio-hoving.pages.dev/)
 
-- 📝 I regularly write articles on [Something i would like to do eventually...](Something i would like to do eventually...)
+- 📝 I regularly write articles on (Something i would like to do eventually...)
 
 - 💬 Ask me about **Anything i did in this projects or why did i choose this.**
 
-- 📫 How to reach me **hovington234@gmai.com**
+- 📫 How to reach me **hovington234@gmail.com**
 
 - ⚡ Fun fact **I am passionate about so many things, as it is why i really enjoy web developing. I like to do videos, medias and all the things surrounding website.**
 
