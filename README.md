@@ -1,13 +1,25 @@
 <h1 align="center">Hi 👋, I'm Marc-Antoine Hovington</h1>
 <h3 align="center">A passionate web developer from Canada,Québec</h3>
 
-<h2> This project is about 3 main things **Kiboikoi Website**</h2>
+# WordPress Development Experience
 
-1. **Wordpress** _I often developed wordpress website but i never made the migration to online. I never played with online and domains name. So i made this website so i could experience these for a first time. Knowing my abilites, i am pretty sure that is the most easiest part once you know how to do. I do not intend to go the extra miles for this website as it was more on the hosting and design points._
+I have extensive experience developing WordPress websites, but I have yet to migrate one online. Exploring online hosting and domain name management is a new experience for me, and this website serves as a learning opportunity in that regard. While I am confident in my abilities, I consider the migration process to be straightforward once the necessary knowledge is acquired. For this project, I focused primarily on hosting and design aspects, rather than delving into advanced functionalities.
 
-2. **Ui/Ux** _I wanted to give a better ui/ux experience to the customer that would come into this website. Personally as the information on the website is rather small, having multiples pages is not usefull. I took the choice to condense all the information into a one page website._
+# UI/UX Design Approach
 
-3. **Design** _I wanted to challenge myself to do a design about dark green and brown. This comes from the fact that Le Kiboikoi is located in a forest. Surround by all theses trees and tree fir. I used a neutral color to make the website not too dark as it can sometimes gives a more serious vibe._
+In designing this website, my goal was to provide visitors with an enhanced user experience. Given the limited amount of information presented, I opted for a one-page layout to streamline navigation and simplify content consumption. This decision was made to ensure that users can easily access all relevant information without the need to navigate through multiple pages.
+
+# Design Inspiration
+
+Drawing inspiration from the natural surroundings of Le Kiboikoi, which is nestled in a forest, I aimed to create a design palette that reflects its environment. The predominant use of dark green and brown hues is reminiscent of the lush foliage and earthy tones found in the forest. To balance the color scheme and prevent the website from appearing overly dark, I incorporated neutral tones to maintain a harmonious and approachable aesthetic.
+
+---
+
+**Key Points to Note:**
+
+- This project focuses on exploring the migration process of a WordPress website to an online platform, along with domain name management.
+- The website employs a one-page layout to optimize user experience and streamline content accessibility.
+- Design choices are inspired by the natural environment of Le Kiboikoi, utilizing dark green and brown tones to evoke a forest ambiance while maintaining a balanced and inviting aesthetic.
 
 - 👨‍💻 All of my projects are available at [https://portfolio-hoving.pages.dev/](https://portfolio-hoving.pages.dev/)
 
