@@ -22,7 +22,14 @@
     <nav id="menu_principal-nav" class="menu-principal">
         <div class="menu-principal-container">
             <div class="menu-principal-content">
-                <span class="menu-principal-logo"><img src="<?php echo get_template_directory_uri() . '/dist/images/logo.svg' ?> ?>"></span>
+                <span class="menu-principal-logo">
+                    <?php
+                    $logo = get_my_logo();
+                    if ($logo) {
+                        echo '<a class="logo-link" href="' . home_url() . '"><img src="' . $logo['url'] . '" alt="' . $logo['alt'] . '" /></a>';
+                    }
+                    ?>
+                </span>
                 <div id="menu-hamburger" class="hamburger-menu">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
@@ -34,7 +41,8 @@
                 array(
                     'theme_location' => 'primary_menu',
                     'menu_class'     => 'menu-principal-ul',
-                    'menu_id'     => 'menu-principal-ul',
+                    'container'      => false,
+                    'menu_id'        => 'menu-principal-ul',
                 )
             );
             ?>

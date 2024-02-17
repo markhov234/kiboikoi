@@ -1,4 +1,4 @@
-<section class="description-section">
+<section id="description" class="description-section">
 
     <?php
     $contactFields = get_field('contact');
@@ -10,7 +10,6 @@
     $contactSub = $contactFields['subtitle'];
     $contactTodayTime = $contactFields['today_time'];
     $contactAvailable = $contactFields['available_hour'];
-    // var_dump($contactAvailable);
 
     ?>
     <div class="description-contact">

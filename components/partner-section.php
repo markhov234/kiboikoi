@@ -1,4 +1,4 @@
-<section class="home-partner-section">
+<section id="partner" class="home-partner-section">
     <div class="home-partner-topwave">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 82" preserveAspectRatio="xMinYMin meet" fill="none">
             <path fill="#273E22" d="M0 22.5c490.574-71.185 715.237 54.093 1441 1.196V82H0V22.5Z" />

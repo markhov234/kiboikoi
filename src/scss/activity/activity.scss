@@ -24,6 +24,26 @@
         fill: #152012;
       }
     }
+    &-bottomwave {
+      position: relative;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+
+      & svg {
+        position: relative;
+        display: block;
+        width: calc(124% + 1.3px);
+        height: 93px;
+      }
+
+      & .shape-fill {
+        fill: #273e22;
+      }
+    }
   }
   &-content {
     text-align: center;

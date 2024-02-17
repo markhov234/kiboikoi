@@ -1,4 +1,29 @@
 <?php
+// Add filter to modify the menu items
+add_filter('wp_nav_menu_items', 'my_wp_nav_menu_items', 10, 2);
+function my_wp_nav_menu_items($items, $args)
+{
+    // Check if the menu is the primary menu
+    if ($args->theme_location === 'primary_menu') {
+
+        // Get the menu object
+        $menu = wp_get_nav_menu_object($args->menu);
+        // var_dump($args->menu);
+
+        // Check if the menu object exists
+        if ($menu) {
+            // Construct the HTML for the logo
+            $html_anchor_activity = '<li><a class="menu-anchor" href="#activity">Activity</a></li>';
+            $html_anchor_partner = '<li><a class="menu-anchor" href="#partner">Partner</a></li>';
+            $html_anchor_description = '<li><a class="menu-anchor" href="#description">Description</a></li>';
+            // Prepend the logo HTML to the existing menu items
+            $items = $html_anchor_description . $html_anchor_activity . $html_anchor_partner . $items;
+        }
+    }
+
+    // Return the modified menu items
+    return $items;
+}
 
 function allow_cors()
 {
@@ -25,11 +50,11 @@ function theme_setup()
 {
     register_nav_menus(
         array(
-            'primary_menu' => esc_html__('Primary Menu', 'kiboikoi'),
-            'footer_menu'  => esc_html__('Footer Menu', 'kiboikoi'),
+            'primary_menu' => esc_html__('Primary Menu', 'kiboikoi')
         )
     );
 }
+
 
 function enqueue_custom_fonts()
 {
@@ -85,13 +110,32 @@ function my_acf_google_map_api($api)
     $api['key'] = 'AIzaSyCRVtg-kdlt66NB6gay8DEI5Rq4LXl5lHg';
     return $api;
 }
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+function get_my_logo()
+{
+    // Get the primary menu object
+    $menu = wp_get_nav_menu_object('primary_menu');
+    // Check if the menu object exists
+    if ($menu) {
+        // Get the logo field using Advanced Custom Fields (ACF)
+        $logo = get_field('logo', $menu);
+
+        // Check if the logo exists
+        if ($logo) {
+            // Return the logo
+            return $logo;
+        }
+    }
+
+    // Return false if no logo found
+    return false;
+}
+
+
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 add_action('init', 'remove_partner_editor_support');
 add_action('init', 'custom_register_partner_post_type');
-
-
-
 add_action('init', 'allow_cors');
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
