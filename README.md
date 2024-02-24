@@ -1,7 +1,15 @@
 <h1 align="center">Hi 👋, I'm Marc-Antoine Hovington</h1>
-<h3 align="center">A passionate web developer from Canada,Québec</h3>
+<h3 align="center">A passionate web developer from Canada,Québec</h3></br>
 <a href="https://www.kiboikoihoving.xyz/">Kiboikoi Hoving</a></br>
 **This is not the real website, the original is <a href="https://www.kiboikoi.com/">there</a></br>
+
+# TODO
+
+- Add image to activity zone
+- Add partner page
+- Optimize image and HTML
+- 
+
 # WordPress Development Experience
 
 I have extensive experience developing WordPress websites, but I have yet to migrate one online. Exploring online hosting and domain name management is a new experience for me, and this website serves as a learning opportunity in that regard. While I am confident in my abilities, I consider the migration process to be straightforward once the necessary knowledge is acquired. For this project, I focused primarily on hosting and design aspects, rather than delving into advanced functionalities.
