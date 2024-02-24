@@ -13,11 +13,11 @@ function my_wp_nav_menu_items($items, $args)
         // Check if the menu object exists
         if ($menu) {
             // Construct the HTML for the logo
-            $html_anchor_activity = '<li><a class="menu-anchor" href="#activity">Activity</a></li>';
-            $html_anchor_partner = '<li><a class="menu-anchor" href="#partner">Partner</a></li>';
+            $html_anchor_activity = '<li><a class="menu-anchor" href="#activity">Activités</a></li>';
+            $html_anchor_partner = '<li><a class="menu-anchor" href="#partner">Partenaires</a></li>';
             $html_anchor_description = '<li><a class="menu-anchor" href="#description">Description</a></li>';
             // Prepend the logo HTML to the existing menu items
-            $items = $html_anchor_description . $html_anchor_activity . $html_anchor_partner . $items;
+            $items = $items . $html_anchor_description . $html_anchor_activity . $html_anchor_partner;
         }
     }
 
@@ -63,6 +63,7 @@ function enqueue_custom_fonts()
     wp_enqueue_style('custom-font', get_template_directory_uri() . '/dist/css/fonts/Tungsten-Semibold.woff', array(), '1.0.0', 'all');
     wp_enqueue_style('location', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 }
+
 
 
 function custom_register_partner_post_type()
@@ -131,7 +132,17 @@ function get_my_logo()
     return false;
 }
 
+function webkul_add_woocommerce_support()
+{
+    //Add WoocCommerce theme support to our theme
+    add_theme_support('woocommerce');
+    // To enable gallery features add WooCommerce Product zoom effect, lightbox and slider support to our theme
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
+}
 
+add_action('after_setup_theme', 'webkul_add_woocommerce_support');
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 add_action('init', 'remove_partner_editor_support');

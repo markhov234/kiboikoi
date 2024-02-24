@@ -1,6 +1,7 @@
 .menu-principal {
   &-content {
     margin-top: 20px;
+    width: 100%;
     margin-left: auto;
     display: flex;
   }
@@ -20,7 +21,7 @@
     background-color: #2b2014;
   }
   &-logo {
-    margin-right: 10px;
+    margin: 0 auto;
   }
   z-index: 2;
   top: 0;
@@ -29,7 +30,7 @@
   // height: 150px;
   &-wave {
     position: absolute;
-    bottom: -40px;
+    bottom: -65px;
     left: 0;
     aspect-ratio: 900/250;
     width: 100%;
@@ -40,16 +41,32 @@
   }
 
   &.open &-ul {
+    text-align: center;
+    margin-top: -10px;
     display: flex;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   &-ul {
     display: none;
+    margin: 0;
+    padding: 20px 0 5px 0;
     // animation: ease-in-out 0.3s;
     & li {
       visibility: hidden;
       opacity: 0;
       transition: ease-in-out 0.2s;
+      margin: 5px 0;
+      & a {
+        color: white;
+        text-decoration: none;
+        transition: ease-in-out 0.1s;
+        &:hover {
+          color: #f0082b;
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }

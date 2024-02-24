@@ -9,6 +9,7 @@
 
     <!-- Include your custom styles -->
     <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/styles.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://kiboikoi.local/wp-content/uploads/2024/02/logo_kiboikoi.png">
 
     <!-- Include your custom script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +23,12 @@
     <nav id="menu_principal-nav" class="menu-principal">
         <div class="menu-principal-container">
             <div class="menu-principal-content">
-                <span class="menu-principal-logo">
-                    <?php
-                    $logo = get_my_logo();
-                    if ($logo) {
-                        echo '<a class="logo-link" href="' . home_url() . '"><img src="' . $logo['url'] . '" alt="' . $logo['alt'] . '" /></a>';
-                    }
-                    ?>
-                </span>
+                <?php
+                $logo = get_my_logo();
+                if ($logo) {
+                    echo '<a class="menu-principal-logo" href="' . home_url() . '"><img src="' . $logo['url'] . '" alt="' . $logo['alt'] . '" /></a>';
+                }
+                ?>
                 <div id="menu-hamburger" class="hamburger-menu">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>

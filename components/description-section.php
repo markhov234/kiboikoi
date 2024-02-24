@@ -38,7 +38,7 @@
                 </h3>
                 <p class="description-contact-times-principal">
                     Aujourd'hui: <span><?php echo $contactTodayTime ?></span>
-                    <span id="arrowTimes">ARROW</span>
+                    <span class="arrow_time" id="arrowTimes"></span>
                 </p>
                 <div class="description-contact-times-all">
                     <?php echo $contactAvailable ?>
@@ -56,33 +56,25 @@
             <div class="description-menu-button">
                 <div class="description-menu-button-top">
                     <p>Menu Nourriture</p>
-                    <img src="https://fakeimg.pl/300/" alt="">
+                    <img src="http://kiboikoi.local/wp-content/uploads/2024/02/nourriture.png" alt="">
                 </div>
-                <span>Download</span>
+                <span></span>
 
             </div>
             <div class="description-menu-button">
                 <div class="description-menu-button-top">
-                    <p>Menu Nourriture</p>
-                    <img src="https://fakeimg.pl/300/" alt="">
+                    <p>Menu bière</p>
+                    <img src="http://kiboikoi.local/wp-content/uploads/2024/02/beer.png" alt="">
                 </div>
-                <span>Download</span>
+                <span></span>
 
             </div>
             <div class="description-menu-button">
                 <div class="description-menu-button-top">
-                    <p>Menu Nourriture</p>
-                    <img src="https://fakeimg.pl/300/" alt="">
+                    <p>Menu thés et tissanes</p>
+                    <img src="http://kiboikoi.local/wp-content/uploads/2024/02/tea-1.png" alt="">
                 </div>
-                <span>Download</span>
-
-            </div>
-            <div class="description-menu-button">
-                <div class="description-menu-button-top">
-                    <p>Menu Nourriture</p>
-                    <img src="https://fakeimg.pl/300/" alt="">
-                </div>
-                <span>Download</span>
+                <span></span>
 
             </div>
         </div>

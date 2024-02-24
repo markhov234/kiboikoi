@@ -89,6 +89,24 @@
         visibility: visible;
         opacity: 100%;
       }
+      &-principal {
+        display: flex;
+        & .arrow_time {
+          margin-left: 5px;
+          display: block;
+          width: 15px;
+          height: 15px;
+          background: url("../images/arrowdown.png") no-repeat center;
+          background-size: cover;
+          transition: ease-in-out 0.1s;
+          &.open {
+            transform: rotate(180deg);
+          }
+          &:hover {
+            transform: scale(1.2) rotate(180deg);
+          }
+        }
+      }
     }
     &-informations {
       width: 45%;
@@ -148,6 +166,12 @@
       grid-column-gap: 20px;
       grid-row-gap: 55px;
       margin-top: 50px;
+      & span {
+        width: 11px;
+        height: 14px;
+        background: url("../images/download.png") no-repeat center;
+        background-size: contain;
+      }
     }
     &-button {
       position: relative;

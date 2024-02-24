@@ -1,18 +1,23 @@
 .main_footer {
-  height: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   padding-top: 15px;
-  background-color: #152012;
-  // & > &-small {
-  //   display: flex;
-  //   align-items: end;
-  // }
+  background-color: #273e22;
+  & a {
+    color: #f5e1c7;
+    &:hover {
+      color: #f0082b;
+    }
+  }
   &-container {
     text-align: center;
     max-width: 1400px;
     height: calc(100% - 15px);
   }
-  &-small {
-    font-size: 12px;
-    padding-bottom: 15px;
+  & small {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
   }
 }

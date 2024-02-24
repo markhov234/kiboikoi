@@ -1,8 +1,18 @@
-<section id="hero" class="hero-main">
+<?php
+$getHero = get_field('hero_section');
+$heroTitle = $getHero['title'];
+$heroSubtitle = $getHero['subtitle'];
+$heroImage = $getHero['hero_image']['url'];
+// var_dump($heroImage);
+?>
+<section id="hero" class="hero">
+
+    <img src="<?php echo $heroImage ?>" alt="">
     <div class="hero-content">
         <h1 class="hero-title">Le kiboikoi
-            <span class="hero-subtitle">Café Bar Culturel Les Escoumins</span>
         </h1>
+        <span class="hero-subtitle">Café Bar Culturel Les Escoumins</span>
+
     </div>
     <div class="hero-bottomwave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       menuPrincipal.classList.toggle('open');
       // console.log('menu-hamburger clicked');
       var ulMenuHeight = document.querySelector('.menu-principal-ul').offsetHeight;
-
+      console.log(ulMenuHeight);
       var containerHeight = ulMenuHeight + 50; // Adjust the value as needed
       var containerElement = document.querySelector('.menu-principal-container');
       containerElement.style.height = containerHeight + 'px';

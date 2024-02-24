@@ -1,8 +1,9 @@
 .home-partner {
   &-title {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 55px;
     margin: 0;
+    padding-bottom: 50px;
   }
   &-section {
     background-color: #273e22;
@@ -20,7 +21,8 @@
     margin: 15px;
   }
   &-button {
-    max-width: 200px;
+    width: 200px;
+    margin: auto;
     height: auto;
     display: flex;
     justify-content: center; /* Horizontally center items */

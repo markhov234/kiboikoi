@@ -23,6 +23,7 @@ ul {
 // $redError: #A30822;
 
 .hamburger-menu {
+  margin-top: 10px;
   margin-right: 15px;
   width: 30px;
   height: 20px;
@@ -30,6 +31,11 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
+  &:hover .line {
+    transition: ease-in-out 0.2s;
+    background-color: #f0082b;
+  }
 }
 
 .line {
@@ -37,7 +43,7 @@ ul {
   height: 4px;
   background-color: white;
   border-radius: 4px;
-  transition: transform 0.3s ease;
+  transition: ease-in-out 0.2s;
 }
 
 .line-1 {
